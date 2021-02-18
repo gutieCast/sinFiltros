@@ -1,0 +1,1 @@
+export { ImgHero } from './ImgHero'

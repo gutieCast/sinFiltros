@@ -1,0 +1,58 @@
+@import "./variables.scss";
+
+@mixin breakpoint-1 {
+    @media (min-width: 240px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-2 {
+    @media (min-width: 481px) {
+        @content;
+    }
+}
+
+
+@mixin breakpoint-3 {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-4 {
+    @media (min-width: 990px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-5 {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-6 {
+    @media (min-width: 1824px) {
+        @content;
+    }
+}
+
+@keyframes movDer {
+	0% {
+		color: none;
+		transform: translateX(50px);
+	}
+	100% {
+		color: $white;
+		transform: translate(0);
+	}
+}
+
+@mixin changeColor {
+    @keyframes colorScroll {
+        @content;
+        100% {
+            color: $blue;
+        }
+    }
+}

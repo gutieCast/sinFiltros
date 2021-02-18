@@ -1,0 +1,77 @@
+// COLOR
+
+$dark-violet: #1f1031;
+$blue: #6fa6bd;
+$dark-blue: #514b9f;
+$green: #7ec490;
+$orange: #d9773d;
+$pink: #e88db1;
+$red: #e1493f;
+$violet: #8c70ab;
+$white: #f3f5f1;
+$yellow: #f2c635;
+
+//MARGINS & PADDINGS
+
+$margin-mobile1: 10px;
+$margin-tablet: 40px;
+
+$padding-mobile1: 0 10px;
+$padding-mobile2: 0 15px;
+$padding-tablet: 0 20px;
+$padding-laptop: 0 30px;
+$padding-desktop: 0 40px;
+$padding-plus: 0 70px;
+
+//FONTS
+
+$normal-font: 'Open Sans', sans-serif;
+$title-font: 'Montserrat', sans-serif;
+
+
+//FONT-SIZES & WEIGHT
+
+$font-size-button: 15px;
+$font-weight-button: bold;
+
+$font-size-xxs: 11px;
+$font-size-xs: 12px;
+$font-size-s: 14px;
+$font-size-normal: 16px;
+$font-size-l: 24px;
+$font-size-xl: 32px;
+$font-size-xxl: 48px;
+
+//HEIGHTS & WIDTHS
+
+$height-header-1: 70px;
+$height-header-2: 90px;
+$height-header-3: 110px;
+
+$height-hero-1: 812px;
+$height-hero-2: 1280px;
+$height-hero-3: 2400px;
+$height-hero-4: 3000px;
+
+$height-button: 45px;
+$width-button: 170px;
+
+//LINE-HEIGHT
+
+$line-height-mobile: 40px;
+
+// ANIMATION
+
+$text-animation: 1s ease 0s 1 normal forwards move;
+
+@keyframes move {
+	0% {
+	  transform: translate(-25%, 0);
+	}
+	50% {
+	  text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+	}
+	100% {
+	  transform: translate(0, 0);
+	}
+  }	

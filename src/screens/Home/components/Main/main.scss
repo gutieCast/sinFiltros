@@ -1,0 +1,15 @@
+//MAIN//
+@import "../../../../styles/abstract/mixins.scss";
+@import "../../../../styles/abstract/variables.scss";
+
+.main {
+    background-color: $dark-blue;
+    opacity: 1;
+    position: relative;
+    width: 100wv;
+    .nav-open & {
+        transition: all 0.3s;
+        opacity: 0;
+        overflow: hidden;
+    }
+}

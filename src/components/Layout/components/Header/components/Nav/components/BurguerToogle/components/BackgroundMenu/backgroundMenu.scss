@@ -1,0 +1,49 @@
+@import "../../../../../../../../../../styles/abstract/mixins.scss";
+@import "../../../../../../../../../../styles/abstract/variables.scss";
+
+.menu-background {
+    visibility: hidden;
+    width: 300%;
+    height: 400px;
+    position: absolute;
+    left: -130%;
+    background-color: $white;
+    transition: background-position 0.5s, transform 0.5s 0.5s, visibility 0.5s 1s;
+    .nav-open & {
+        background-size: 100%;
+        visibility: visible;
+        transition: background-position 0.5s, transform 0.5s 0.5s;
+        z-index: 99999;
+        overflow: hidden;
+    }
+    &.top {
+        transform: rotate(-45deg) translateY(-150%);
+        background: linear-gradient(to top, $green 50%, $dark-blue 50%);
+        background-size: 100% 200%;
+        background-position: -100% 100%;
+        .nav-open & {
+        transform: rotate(-45deg) translateY(-49%);
+        background-position: 0 0;
+        overflow: hidden;
+        }
+    }
+    &.middle {
+        transform: rotate(-45deg) translateY(50%) scaleY(0);
+        background: $dark-blue;
+        .nav-open & {
+        transform: rotate(-45deg) translateY(50%) scaleY(1);
+        overflow: hidden;
+        }
+    }
+    &.bottom {
+        transform: rotate(-45deg) translateY(250%);
+        background: linear-gradient(to bottom, $dark-blue 50%, $green 50%);
+        background-size: 100% 200%;
+        background-position: 0 -100%;
+        .nav-open & {
+        transform: rotate(-45deg) translateY(149%);
+        background-position: 0 0;
+        overflow: hidden;
+        }
+    }   
+}

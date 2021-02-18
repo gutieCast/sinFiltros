@@ -1,0 +1,40 @@
+//IMG//
+@import "../../../../../../styles/abstract/mixins.scss";
+@import "../../../../../../styles/abstract/variables.scss";
+
+#img-main{
+    background-image: url(../../../../../../assets/img/hero-index.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    position: absolute;
+    // display: block;
+    width: 100%;
+    @include breakpoint-1 {
+        height: $height-hero-1;
+    }
+    @include breakpoint-3 {
+        height: $height-hero-3;
+    }
+    @include breakpoint-4 {
+        background-position-x: center;
+    }
+    // &::before {
+    //     content:'';
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     background-color: rgba(27, 30, 31, 0.473);
+    //     @include breakpoint-1 {
+    //         top: $height-header-1;
+    //     }
+    //     @include breakpoint-3 {
+    //         top: $height-header-2;
+    //     }
+    //     @include breakpoint-5 {
+    //         top: $height-header-3;
+    //     }
+    // }
+}

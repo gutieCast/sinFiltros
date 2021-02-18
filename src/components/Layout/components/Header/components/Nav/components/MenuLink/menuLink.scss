@@ -1,0 +1,62 @@
+//MENU LINK//
+@import "../../../../../../../../styles/abstract/variables";
+@import "../../../../../../../../styles/abstract/mixins";
+
+.menu-link  {
+    color: $white;
+    display: inline-block;
+    font-family: $title-font;
+    font-size: $font-size-normal;
+    font-weight: bolder;
+    line-height: $line-height-mobile;
+    text-transform: uppercase;
+    @include breakpoint-1 {
+        $time-offset-close: 0;
+        @for $i from 5 through 1 {
+            &:nth-child(#{$i}n) {
+                transform: translateX(20px);
+                transition-delay: #{$time-offset-close}s;
+                $time-offset-close: $time-offset-close + 0.5;
+            }
+        }
+    }
+    .nav-open & {
+        display: block;
+        opacity: 1;
+        text-align: start;
+        transition: opacity 0s ease 2s;
+        @include breakpoint-1 {
+            $time-offset-close: 1;
+            @for $i from 5 through 1 {
+                &:nth-child(#{$i}n) {
+                    transform: translateX(20px);
+                    transition-delay: #{$time-offset-close}s;
+                    $time-offset-close: $time-offset-close + 0.5;
+                }
+            }
+        }
+    }	
+    @include breakpoint-3 {
+        font-size: $font-size-xs;
+        padding: 0 15px;
+    }
+    @include breakpoint-4 {
+        cursor: pointer;
+        font-size: $font-size-s;
+        margin: 0 5px;
+        &:hover {
+            color: $yellow;
+            text-decoration-line: none;
+            transition: color ease .7s;
+        }
+    }
+    @include breakpoint-5 {
+        font-size: $font-size-normal;
+        margin: 0 5px;
+    }
+    @include breakpoint-6 {
+        font-size: $font-size-l;
+        margin: 0 5px;
+        padding: 0 20px;
+    }
+}

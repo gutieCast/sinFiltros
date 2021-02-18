@@ -1,0 +1,36 @@
+//LOGO_HEADER//
+@import "../../../../../../styles/abstract/mixins";
+
+.logo-box {
+    align-items: center;
+    border: none;
+    display: flex;
+    height: 100%;
+    z-index: 99999;
+    @include breakpoint-1 {
+        width: 100px;
+    }
+    @include breakpoint-2 {
+        width: 110px;
+    }
+    @include breakpoint-3 {
+        width: 120px;
+    }
+    @include breakpoint-4 {
+        width: 130px;
+    }
+    @include breakpoint-5 {
+        width: 140px;
+    }
+    @include breakpoint-6 {
+        width: 150px;
+    }
+    .link-logo {
+        #logoSF {
+            max-width: 100%;
+        }
+        @include breakpoint-4 {
+            cursor: pointer;
+        }
+    }
+}
