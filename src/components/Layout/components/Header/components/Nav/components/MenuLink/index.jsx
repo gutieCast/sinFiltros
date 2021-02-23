@@ -1,12 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './menuLink.scss';
 
-const MenuLink = ({ link, name }) => {
+const MenuLink = ({ link, linkName }) => {
     return (
-        <NavLink className='menu-link' to={link}>
-            {name}
-        </NavLink>
+        <Link className='menu-link' to={link}>
+            {linkName}
+        </Link>
     )
 }
 

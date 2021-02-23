@@ -1,1 +1,2 @@
-export { ImgHero } from './ImgHero'
+export { ImgHero } from './ImgHero';
+export { TextHero } from './TextHero';

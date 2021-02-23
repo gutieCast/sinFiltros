@@ -1,0 +1,45 @@
+@import "../../../../../../styles/abstract/mixins.scss";
+@import "../../../../../../styles/abstract/variables.scss";
+
+.text-content {
+    display: block;
+    width: 100vw;
+    z-index: 1;
+    @include breakpoint-1 {
+        margin-top: 100px;
+        // top: $height-header-1;
+    }
+    @include breakpoint-3 {
+        position: absolute;
+        top: $height-header-2;
+    }
+    @include breakpoint-4 {
+        top: $height-header-3;
+    }
+    #text-hero {  
+        text-align: center;
+        color: $white;
+        font-family: $title-font;
+        font-weight: bolder;
+        // margin: auto;
+        text-shadow: rgba(3, 3, 3, 0.719) 0 0 10px;
+        @include breakpoint-1 {
+            font-size: $font-size-s;
+        }
+        @include breakpoint-2 {
+            font-size: $font-size-normal;
+        }
+        @include breakpoint-3 {
+            font-size: $font-size-l;
+        }
+        // @include breakpoint-4 {
+        //     font-size: $font-size-l;
+        // }
+        // @include breakpoint-5 {
+        //     font-size: $font-size-xl*2;
+        // }
+        // @include breakpoint-6 {
+        //     font-size: $font-size-l;
+        // }
+}
+}

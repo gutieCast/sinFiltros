@@ -12,15 +12,13 @@ const items = [
 ]
 
 
-export const MenuList = ({ link, name }) => {
+export const MenuList = () => {
     return (
         <ul id='menu-primary'>
             {
-                items.map(item =>
-                    <MenuItem key={items.indexOf(item)}>
-                        <MenuLink link={link} />
-                        {name}
-                        <MenuLink />
+                items.map(({ link, name }) =>
+                    <MenuItem key={name}>
+                        <MenuLink link={link} linkName={name} />
                     </MenuItem>
                 )
             }

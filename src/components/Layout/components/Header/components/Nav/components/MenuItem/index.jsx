@@ -1,9 +1,9 @@
 import React from 'react'
 import './menuItem.scss'
 
-export const MenuItem = ({ children, index }) => {
+export const MenuItem = ({ children, key }) => {
     return (
-        <li key={index} className='menu-item'>
+        <li key={key} className='menu-item'>
             {children}
         </li>
     )

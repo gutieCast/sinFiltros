@@ -1,0 +1,142 @@
+//FOOTER//
+@import "../../../../styles/abstract/variables";
+@import "../../../../styles/abstract/mixins";
+
+
+.main-footer {
+    align-items: center;
+    background-color: $dark-violet;
+    bottom: 0;
+    color: $white;
+    justify-content: center;
+    margin-top: 10px;
+    position: absolute;
+    width: 100vw;
+    .nav-open & {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        padding: 10px;
+    }   
+    .links-social-networks {
+        align-items: center;
+        display: flex;
+        height: 70px;
+        justify-content: center;
+        @include breakpoint-1 {
+            padding : 10px;
+        }
+        @include breakpoint-2 {
+            padding: 10px 30px;
+        }
+        @include breakpoint-5 {
+            padding: 10px 120px;
+        }
+        .icons-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .item-social-network {
+                a {
+                    cursor: pointer;
+                    .icon {
+                        padding: 0;
+                        @include breakpoint-1 {
+                            margin: 0 10px;
+                        }
+                        @include breakpoint-3 {
+                            margin: 0 25px;
+                        }
+                        @include breakpoint-4 {
+                            &:hover  {
+                                border-bottom: 1px solid $orange;
+                                padding-bottom: 5px;
+                                transition: all .5s ease;
+                            }
+                        }
+                    }
+                }
+            }      
+        }
+    }
+    .nav-footer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        .list-footer {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            .item-footer {
+                align-items: center;
+                border-left: 1px solid $white;
+                display: flex;
+                justify-content: center;
+                margin: 5px 0;
+                @include breakpoint-1 {  
+                padding: $padding-mobile1;
+                }
+                @include breakpoint-2 {
+                    padding: $padding-mobile2;
+                }
+                @include breakpoint-3 {
+                    padding: $padding-tablet;
+                }
+                @include breakpoint-4 {
+                    padding: $padding-laptop;
+                }
+                @include breakpoint-5 {
+                    padding: $padding-desktop;
+                }
+                @include breakpoint-6 {
+                    padding: $padding-plus;
+                }
+                &:first-child {
+                    border: none;
+                }
+            }
+        }
+    }
+    .footer-footer {
+        background-color: $dark-violet;
+        display: block;
+        font-family: $normal-font;
+        padding: 5px;
+        text-align: center;
+        width: 100vw;
+    }    
+}
+.footer-text {
+    display: inline-block;
+    font-family: $title-font;
+    line-height: $font-size-s;
+    padding: 3px;
+    text-align: center;
+    @include breakpoint-1 {
+        font-size: $font-size-xs;
+    }
+    @include breakpoint-3 {
+        font-size: $font-size-s;
+    }
+}
+.link-footer {
+    color: $white;        
+    font-family: $title-font;
+    font-size: $font-size-s;
+    @include breakpoint-1 {
+        font-size: $font-size-xs;
+    }
+    @include breakpoint-3 {
+        font-size: $font-size-s;
+    }
+    @include breakpoint-4 {
+        &:hover {
+            color: $yellow;
+            cursor: pointer;
+            font-size: $font-size-normal;
+            font-weight: bold;
+            padding: 0 5px;
+            transition: all 0.5s ease;
+        }
+    }
+}

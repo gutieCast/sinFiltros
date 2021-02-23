@@ -4,9 +4,11 @@
 
 .main {
     background-color: $dark-blue;
+    display: block;
     opacity: 1;
-    position: relative;
     width: 100wv;
+    height: 100vh;
+    flex: 1;
     .nav-open & {
         transition: all 0.3s;
         opacity: 0;
