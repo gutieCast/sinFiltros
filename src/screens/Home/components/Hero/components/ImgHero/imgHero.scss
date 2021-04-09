@@ -3,38 +3,16 @@
 @import "../../../../../../styles/abstract/variables.scss";
 
 #img-main{
-    // background-image: url(../../../../../../assets/img/hero-index.png);
-    // background-repeat: no-repeat;
-    // background-attachment:fixed;
-    // position: absolute;
-    // // display: block;
-    width: 100%;
+    max-width: 100%;
     z-index: 2;
     @include breakpoint-1 {
-        margin-top: $height-header-1;
-        margin-bottom: 70px;
+        margin-top: 10px;
+        // margin-bottom: 70px;
     }
     @include breakpoint-3 {
-        margin-top: $height-header-2;
+        margin-top: 15px;
     }
     @include breakpoint-4 {
-        margin-top: $height-header-3;
+        margin-top: 20px;
     }
-    // &::before {
-    //     content:'';
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     right: 0;
-    //     background-color: rgba(27, 30, 31, 0.473);
-    //     @include breakpoint-1 {
-    //         top: $height-header-1;
-    //     }
-    //     @include breakpoint-3 {
-    //         top: $height-header-2;
-    //     }
-    //     @include breakpoint-5 {
-    //         top: $height-header-3;
-    //     }
-    // }
 }

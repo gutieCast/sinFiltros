@@ -1,4 +1,5 @@
 import React from 'react'
+import { GridCards } from '../../components'
 import { Layout } from '../../components/Layout'
 import { Hero } from './components/Hero'
 import { Main } from './components/Main'
@@ -8,7 +9,8 @@ const Home = () => {
         <>
             <Layout>
                 <Main>
-                    <Hero></Hero>
+                    <Hero />
+                    <GridCards />
                 </Main>
             </Layout>
 

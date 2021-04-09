@@ -1,0 +1,20 @@
+//CARDS//
+@import "../../styles//abstract/variables";
+@import "../../styles/abstract/mixins";
+
+.card {
+    background-color: transparent;
+    @include breakpoint-1 {
+        width: 240px;
+    }
+    
+    @include breakpoint-2 {
+        width: 481px;
+    }
+    @include breakpoint-3 {
+        width: 370px;
+    }
+    @include breakpoint-4 {
+        width: 230px;
+    }
+}

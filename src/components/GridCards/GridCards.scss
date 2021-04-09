@@ -1,0 +1,10 @@
+.gridCards {
+    margin: 0;
+    @include breakpoint-1 {
+        display: block
+    }
+    @include breakpoint-3 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}

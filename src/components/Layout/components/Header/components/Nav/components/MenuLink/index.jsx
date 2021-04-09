@@ -4,7 +4,7 @@ import './menuLink.scss';
 
 const MenuLink = ({ link, linkName }) => {
     return (
-        <Link className='menu-link' to={link}>
+        <Link className="uk-animation-slide-left-small menu-link" to={link}>
             {linkName}
         </Link>
     )

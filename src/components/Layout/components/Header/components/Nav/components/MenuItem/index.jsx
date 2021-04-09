@@ -3,8 +3,8 @@ import './menuItem.scss'
 
 export const MenuItem = ({ children, key }) => {
     return (
-        <li key={key} className='menu-item'>
-            {children}
+        <li className="uk-animation-slide-left-medium uk-animation-toggle menu-item">
+            {key, children}
         </li>
     )
 }

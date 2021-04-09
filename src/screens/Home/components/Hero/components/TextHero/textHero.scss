@@ -2,35 +2,35 @@
 @import "../../../../../../styles/abstract/variables.scss";
 
 .text-content {
+    align-items: center;
     display: block;
-    width: 100vw;
-    z-index: 1;
     @include breakpoint-1 {
         margin-top: 100px;
-        // top: $height-header-1;
+    }
+    @include breakpoint-2 {
+        margin-top: 120px;
     }
     @include breakpoint-3 {
-        position: absolute;
-        top: $height-header-2;
+        margin-top: 130px;
     }
     @include breakpoint-4 {
-        top: $height-header-3;
+        margin-top: 140px;
     }
     #text-hero {  
         text-align: center;
         color: $white;
         font-family: $title-font;
         font-weight: bolder;
-        // margin: auto;
+        margin: auto;
         text-shadow: rgba(3, 3, 3, 0.719) 0 0 10px;
         @include breakpoint-1 {
-            font-size: $font-size-s;
+            font-size: 2rem;
         }
         @include breakpoint-2 {
-            font-size: $font-size-normal;
+            font-size: 3rem;
         }
         @include breakpoint-3 {
-            font-size: $font-size-l;
+            font-size: 4rem;
         }
         // @include breakpoint-4 {
         //     font-size: $font-size-l;
@@ -41,5 +41,5 @@
         // @include breakpoint-6 {
         //     font-size: $font-size-l;
         // }
-}
+    }
 }

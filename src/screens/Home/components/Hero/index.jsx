@@ -5,8 +5,8 @@ import './hero.scss'
 const Hero = () => {
     return (
         <div id="hero">
-            < ImgHero />
             < TextHero />
+            < ImgHero />
         </div>
     )
 }

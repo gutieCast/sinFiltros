@@ -16,15 +16,6 @@
     @include breakpoint-3 {
         width: 120px;
     }
-    @include breakpoint-4 {
-        width: 130px;
-    }
-    @include breakpoint-5 {
-        width: 140px;
-    }
-    @include breakpoint-6 {
-        width: 150px;
-    }
     .link-logo {
         #logoSF {
             max-width: 100%;

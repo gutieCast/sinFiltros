@@ -3,30 +3,32 @@
 @import "../../../../../../../../styles/abstract/mixins";
 
 .menu-item {
+    display: flex;
+    align-items: center;
     @include breakpoint-1 {
         opacity: 0;
         transition: all 0.3s;
-        $time-offset-close: 0;
         margin: 30px 10px;
-        @for $i from 5 through 1 {
-            &:nth-child(#{$i}n) {
-                transform: translateX(20px);
-                $time-offset-close: $time-offset-close + 0.5;
-                transition-delay: #{$time-offset-close}s;
-            }
-        }
+        // $time-offset-close: 0;
+        // @for $i from 5 through 1 {
+        //     &:nth-child(#{$i}n) {
+        //         transform: translateX(20px);
+        //         $time-offset-close: $time-offset-close + 0.5;
+        //         transition-delay: #{$time-offset-close}s;
+        //     }
+        // }
         .nav-open & {
             opacity: 1;
             transition: all 0.3s;
             backface-visibility: hidden;
-            $time-offset-open: 1;
-            @for $i from 1 through 5 {
-                &:nth-child(#{$i}n) {
-                    transform: translateX(0);
-                    $time-offset-open: $time-offset-open + 0.5;
-                transition-delay: #{$time-offset-open}s;
-                }
-            }
+            // $time-offset-open: 1;
+            // @for $i from 1 through 5 {
+            //     &:nth-child(#{$i}n) {
+            //         transform: translateX(0);
+            //         $time-offset-open: $time-offset-open + 0.5;
+            //     transition-delay: #{$time-offset-open}s;
+            //     }
+            // }
         }
     }
     @include breakpoint-3 {

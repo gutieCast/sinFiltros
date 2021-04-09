@@ -3,11 +3,16 @@
 @import "../../../../styles/abstract/variables.scss";
 
 .main {
+    align-items: center;
     background-color: $dark-blue;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     opacity: 1;
-    width: 100wv;
-    height: 100vh;
+    margin: 0;
+    padding-bottom: 165px;
+    // width: 100wv;
+    // height: 100vh;
     flex: 1;
     .nav-open & {
         transition: all 0.3s;
