@@ -1,7 +1,7 @@
 // import logo from './';
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home, AboutUs, Education, Parents, Multimedia, Colaboration } from "./screens";
+import { Home, AboutUs, Education, Parents, Multimedia, Colaboration, Placer } from "./screens";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <Route path='/padres' component={Parents} />
           <Route path='/multimedia' component={Multimedia} />
           <Route path='/colabora' component={Colaboration} />
+          <Route path='/placer' component={Placer} />
           <Route path='/' component={Home} />
         </Switch>
       </Router>

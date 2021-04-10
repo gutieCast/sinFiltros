@@ -1,2 +1,1 @@
-export { Main } from './Main'
-export { Hero } from './Hero'
+export { GridCards } from './GridCards'
