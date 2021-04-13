@@ -16,7 +16,7 @@ export const Footer = () => {
                         </Link>
                     </li>
                     <li key='sn3' className="uk-animation-toggle item-social-network" tabIndex="0">
-                        <Link to="#" className="uk-animation-scale-down uk-icon-link link-sm" uk-icon="youtube" ratio="1.5">
+                        <Link to="https://www.youtube.com/channel/UCUlaCYWmOMz4lZ9ABzBQMPQ/" className="uk-animation-scale-down uk-icon-link link-sm" uk-icon="youtube" ratio="1.5">
                         </Link>
                     </li>
                     <li key='sn4' className="uk-animation-toggle item-social-network" tabIndex="0">
