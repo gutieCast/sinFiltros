@@ -36,14 +36,14 @@ const infoCards = [
         link: '/genero'
     },
     {
-        title: "Sexo y Sexualidad",
+        title: ["Sexo y ", <br />, "Sexualidad"],
         src: imgSexoSexualidad,
         alt: "Ilustración. Un chico que está bebiendo de un tomatodo, tomando un descanso de un partido de fútbol. Está de pie, con uno de ellos sobre el balón.",
         id: 'imgSexoSexualidad',
         link: '/sexo-y-sexualidad'
     },
     {
-        title: "Derechos sexuales y reproductivos",
+        title: "Derechos",
         src: imgDerechos,
         alt: "Ilustración. Una avatar de videojuego venciendo con una espada a un monstruo.",
         id: 'imgDerechos',

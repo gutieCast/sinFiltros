@@ -2,19 +2,102 @@
 @import "../../styles//abstract/variables";
 @import "../../styles/abstract/mixins";
 
-.card {
-    background-color: transparent;
-    @include breakpoint-1 {
-        width: 240px;
-    }
-    
+.card-box {
+    // min-height: 430px;
+    // min-width: 130px;
+    display: block;
+    position: relative;
+    width: max-content;
     @include breakpoint-2 {
-        width: 481px;
+        padding-left: 25px;
+        padding-bottom: 30px;
     }
-    @include breakpoint-3 {
-        width: 370px;
+    // @include breakpoint-2 {
+    //     padding-left: 45px;
+    //     padding-bottom: 40px;
+    // }
+    // @include breakpoint-5 {
+    //     padding-left: 70px;
+    //     padding-bottom: 70px;
+    // }
+    @include breakpoint-6 {
+        padding: 10px;
+        width: inherit;
     }
-    @include breakpoint-4 {
-        width: 410px;
+    .card {
+        background-blend-mode: screen;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 25px;
+        box-shadow: 0 3px 5px $dark-violet;
+        max-width: 100%;
+        @include breakpoint-1 {
+            height: 330px;
+            filter: contrast(70%);
+            width: 240px;
+        }  
+        @include breakpoint-3 {
+            width: 270px;
+        }
+        @include breakpoint-6 {
+            filter: none;
+            width: 303px;
+            &:hover {
+                z-index: 999;
+                filter: contrast(50%);
+                transform: all 1s;
+            }
+        }
+        @include breakpoint-5 {
+
+        }
+        @include breakpoint-6 {
+            max-width: 100%;
+        }
+    }
+    .title-card {
+            color: #000;
+            letter-spacing: -1px;
+            font-size: 2rem;
+            font-family: $title-font;
+            font-weight: bolder;
+            text-transform: uppercase;
+            position: absolute;
+            text-shadow: 0 1px 3px $dark-violet;
+            mix-blend-mode: overlay;
+            bottom: 5%;
+            left: 5%;
+            @include breakpoint-2 {
+                left: 11%;
+                bottom: 11%;
+            }
+            @include breakpoint-6 {
+                opacity: 0;
+            }
+            @include breakpoint-7 {
+                left: 3%;
+                bottom: 3%;
+            }
+    }
+}
+@include breakpoint-4 {
+    .card:hover ~ .title-card {
+            opacity: 1;
+            font-size: 2rem;
+            transition: all .7s;
+    }
+    .title-card:hover ~ .card {
+            filter: contrast(50%);
+    }
+}
+@include breakpoint-6 {
+    .card:hover ~ .title-card {
+            font-size: 1.7rem;
+    }
+}
+@include breakpoint-7 {
+    .card:hover ~ .title-card {
+            font-size: 2.5rem;
     }
 }

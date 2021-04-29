@@ -52,7 +52,7 @@ export const Footer = () => {
             <footer className="footer-footer">
                 <span className="footer-text">© Copyright
                     <a className="link-footer" href="https://colectivaimaginaria.weebly.com/"> colectiva imaginaria </a>
-                    2020
+                    2020-2021
                 </span>
             </footer>
         </footer>

@@ -1,22 +1,22 @@
 import React from 'react'
-// import imgHero from '../../assets/img/hero-index.png';
+import imgHome from '../../assets/img/hero-index.png';
 import { Layout } from '../../components/Layout'
 import { GridCards } from './components'
 
 
 const Home = () => {
-    const imgHome = {
-        url: "../../../../assets/img/hero-index.png",
+    const img = {
+        url: imgHome,
         alt: " Illustration. Six teenager friends are together. They looked happy.",
         id: 'img-hero'
     }
 
     const textHome = {
-        text: 'Educacion sexual integral sin culpas ni vergüenzas'
+        text: ['Educación sexual integral', <br />, 'sin culpas ', <br />, 'ni vergüenzas']
     }
     return (
         <>
-            <Layout img={imgHome} text={textHome.text}>
+            <Layout img={img} text={textHome.text}>
                 <GridCards />
             </Layout>
         </>

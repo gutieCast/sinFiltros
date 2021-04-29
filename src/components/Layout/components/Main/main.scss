@@ -4,14 +4,19 @@
 
 .main {
     align-items: center;
-    background-color: $dark-blue;
     display: flex;
     flex-direction: column;
+    height: inherit;
     justify-content: center;
     opacity: 1;
-    margin: 0;
-    padding-bottom: 165px;
-    flex: 1;
+    width: 100vw;
+    margin-top: 85px;
+    // margin: 0 0 200px 0;
+    padding-bottom: 170px;
+    // padding-bottom: 165px;
+    @include breakpoint-7 {
+        min-width: 1824px;
+    }
     .nav-open & {
         transition: all 0.3s;
         opacity: 0;

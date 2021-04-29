@@ -32,6 +32,12 @@
 }
 
 @mixin breakpoint-6 {
+    @media (min-width: 1366px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-7 {
     @media (min-width: 1824px) {
         @content;
     }
