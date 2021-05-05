@@ -34,7 +34,7 @@
         max-width: 100%;
         @include breakpoint-1 {
             height: 330px;
-            filter: contrast(70%);
+            filter: contrast(45%);
             width: 240px;
         }  
         @include breakpoint-3 {
@@ -85,7 +85,7 @@
             transition: all .7s;
     }
     .title-card:hover ~ .card {
-            filter: contrast(40%);
+            filter: contrast(35%);
     }
 }
 @include breakpoint-6 {
