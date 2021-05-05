@@ -16,7 +16,7 @@ const Home = () => {
     }
     return (
         <>
-            <Layout img={img} text={textHome.text}>
+            <Layout img={img} text={textHome.text} showText={true}>
                 <GridCards />
             </Layout>
         </>

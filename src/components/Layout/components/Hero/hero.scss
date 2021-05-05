@@ -33,17 +33,17 @@
 
 #img-hero{
     background-repeat: no-repeat;
-    background-size: contain;
     margin: 0;
     padding-top: 15px;
     max-width: 100vw;
     // max-height: max-content; 
     @include breakpoint-1 {
+        background-size: contain;
         background-position-y: center;
-        // background-position-y: 210px;
     }
-    // @include breakpoint-2 {
-    // }
+    @include breakpoint-4 {
+        background-size: cover;
+    }
 }
 
 .text-content {

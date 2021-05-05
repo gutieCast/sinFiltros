@@ -1,22 +1,19 @@
 import React from 'react'
+import imgLaptop from '../../assets/img/iconosYPatrones/Patrones/Laptop.png'
 import { Layout } from '../../components/Layout'
 
 const AboutUs = () => {
-    const imgAboutUs = {
-        url: "../../../../assets/img/hero-index.png",
-        alt: " Illustration. Six teenager friends are together. They looked happy.",
-        id: 'img-hero'
-    }
-
-    const textAboutUs = {
-        text: 'Acerca de sinfiltros.org'
+    const img = {
+        url: imgLaptop,
+        alt: "Laptop pattern",
+        id: 'img-about-us   '
     }
 
     return (
-        <Layout img={imgAboutUs}>
+        <Layout img={img}>
             <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" >
                 <h2>
-                    {textAboutUs.text}
+                    Acerca de
                 </h2>
                 <p>
                     Sinfiltros.org es una plataforma que provee información real acerca del sexo, la sexualidad, la reproducción, las relaciones y el placer en un formato divertido.

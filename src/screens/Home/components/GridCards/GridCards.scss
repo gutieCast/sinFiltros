@@ -7,7 +7,7 @@
     justify-content: center;
     height: inherit;
     @include breakpoint-6 {
-        padding: 0;
+        padding: 100px 0 0 0;
         display: grid;
         grid-template-columns: 16% 16% 16% 16% 16% 16%;
     }

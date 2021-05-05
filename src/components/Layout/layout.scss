@@ -1,0 +1,17 @@
+@import '../../styles/abstract/mixins.scss';
+@import '../../styles/abstract/variables.scss';
+
+h2 {
+    color: $white;
+    font-family: $title-font;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+p {
+    color: $dark-violet;
+    font-family: $normal-font;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 50px;
+}
