@@ -1,1 +1,1 @@
-export { MenuFooter } from './MenuFooter'
+// export { MenuFooter } from './MenuFooter'
