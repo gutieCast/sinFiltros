@@ -1,0 +1,59 @@
+@import '../../../../../../styles/abstract/mixins.scss';
+@import '../../../../../../styles/abstract/variables.scss';
+
+.nav-footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    .list-footer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        .item-footer {
+            align-items: center;
+            border-left: 1px solid $white;
+            display: flex;
+            justify-content: center;
+            margin: 2px 0;
+            @include breakpoint-1 {  
+            padding: $padding-mobile1;
+            }
+            @include breakpoint-2 {
+                padding: $padding-mobile2;
+            }
+            @include breakpoint-3 {
+                padding: $padding-tablet;
+            }
+            @include breakpoint-4 {
+                padding: $padding-laptop;
+            }
+            @include breakpoint-5 {
+                padding: $padding-desktop;
+            }
+            @include breakpoint-7 {
+                padding: $padding-plus;
+            }
+            &:first-child {
+                border: none;
+            }
+            .link-footer {
+                color: $white;        
+                font-family: $title-font;
+                font-size: $font-size-s;
+                @include breakpoint-1 {
+                    font-size: $font-size-xs;
+                }
+                @include breakpoint-3 {
+                    font-size: $font-size-s;
+                }
+                &:hover {
+                    color: $yellow;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-weight: bold;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+}

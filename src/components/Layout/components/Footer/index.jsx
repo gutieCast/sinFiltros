@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { MenuFooter } from './components/MenuFooter'
 import './footer.scss'
 
 export const Footer = () => {
@@ -25,7 +26,8 @@ export const Footer = () => {
                     </li>
                 </ul>
             </section>
-            <section className="nav-footer">
+            <MenuFooter />
+            {/* <section className="nav-footer">
                 <ul className="list-footer">
                     <li key='contact' className="uk-animation-toggle item-footer" tabIndex="0">
                         <a className="uk-animation-scale-up link-footer" href="#">
@@ -48,7 +50,7 @@ export const Footer = () => {
                         </a>
                     </li>
                 </ul>
-            </section>
+            </section> */}
             <footer className="footer-footer">
                 <span className="footer-text">© Copyright
                     <a className="link-footer" href="https://colectivaimaginaria.weebly.com/"> colectiva imaginaria </a>

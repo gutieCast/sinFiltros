@@ -1,12 +1,12 @@
 import React from 'react'
-import imgLaptop from '../../assets/img/iconosYPatrones/Patrones/Laptop.png'
+import imgEspada from '../../assets/img/iconosYPatrones/Patrones/Espada.png'
 import { Layout } from '../../components/Layout'
 import './aboutUs.scss'
 
 const AboutUs = () => {
     const img = {
-        url: imgLaptop,
-        alt: "Laptop pattern",
+        url: imgEspada,
+        alt: "Sword pattern",
         id: 'img-about-us   '
     }
 

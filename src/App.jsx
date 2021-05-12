@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Switch>
           <Route path='/acerca-de' component={AboutUs} />
-          <Route path='/educación' component={Education} />
+          <Route path='/educadores' component={Education} />
           <Route path='/padres' component={Parents} />
           <Route path='/multimedia' component={Multimedia} />
           <Route path='/colabora' component={Colaboration} />
