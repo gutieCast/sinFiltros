@@ -32,3 +32,19 @@ const useScroll = () => {
 }
 
 export { useScroll }
+
+
+    // const { scrollDirection } = useScroll();
+
+    // const [Header, setHeader] = useState(true);
+
+    // const handleScroll = () => {
+    //     if (scrollDirection === "down") {
+    //         setHeader(false)
+    //     }
+    //     if (scrollDirection === "up") {
+    //         setHeader(true)
+    //     }
+    // }
+
+    // window.addEventListener('scroll', handleScroll)

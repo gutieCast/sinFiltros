@@ -1,10 +1,10 @@
 import React from "react";
 import './main.scss'
 
-const Main = ({ children }) => {
+const Main = ({ children, namePage }) => {
     return (
         <>
-            <main className='main'>
+            <main className='main' id={namePage} >
                 {children}
             </main>
         </>

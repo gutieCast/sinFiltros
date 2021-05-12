@@ -11,7 +11,7 @@ const AboutUs = () => {
     }
 
     return (
-        <Layout img={img}>
+        <Layout img={img} namePage="about-us">
             <section className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical description" >
                 <h2>
                     Acerca de
@@ -41,7 +41,7 @@ const AboutUs = () => {
                         ¿Cómo se crean los recursos de la plataforma?
                     </h3>
                     <div className="parraph">
-                        Sinfiltros cuenta con un equipo que consta de: psicopedagógas, redactoras, diseñadoras, ilustradoras y progamadoras.
+                        Sinfiltros cuenta con un equipo que consta de: psicopedagogas, redactoras, diseñadoras, ilustradoras y progamadoras.
                     </div>
                     <div className="parraph">
                         Los contenidos son creados con base en un consolidado elaborado por especialistas en educación sexual para adolescentes.

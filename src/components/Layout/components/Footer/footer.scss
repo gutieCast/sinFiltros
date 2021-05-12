@@ -96,24 +96,24 @@
                 &:first-child {
                     border: none;
                 }
-                // .link-footer {
-                //     color: $white;        
-                //     font-family: $title-font;
-                //     font-size: $font-size-s;
-                //     @include breakpoint-1 {
-                //         font-size: $font-size-xs;
-                //     }
-                //     @include breakpoint-3 {
-                //         font-size: $font-size-s;
-                //     }
-                //     &:hover {
-                //         color: $yellow;
-                //         text-decoration: none;
-                //         cursor: pointer;
-                //         font-weight: bold;
-                //         transition: all 0.5s ease;
-                //     }
-                // }
+                .link-footer {
+                    color: $white;        
+                    font-family: $title-font;
+                    font-size: $font-size-s;
+                    @include breakpoint-1 {
+                        font-size: $font-size-xs;
+                    }
+                    @include breakpoint-3 {
+                        font-size: $font-size-s;
+                    }
+                    &:hover {
+                        color: $yellow;
+                        text-decoration: none;
+                        cursor: pointer;
+                        font-weight: bold;
+                        transition: all 0.5s ease;
+                    }
+                }
             }
         }
     }

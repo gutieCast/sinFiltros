@@ -1,16 +1,10 @@
 import React from 'react'
-import imgLaptop from '../../assets/img/iconosYPatrones/Patrones/Laptop.png'
 import { Layout } from '../../components/Layout'
-// import './aboutUs.scss'
+import './multimedia.scss'
 
 const Multimedia = () => {
-    const img = {
-        url: imgLaptop,
-        alt: "Laptop pattern",
-        id: 'img-education'
-    }
     return (
-        <Layout img={img}>
+        <Layout namePage="multimedia">
             <h2>
                 Multimedia
             </h2>

@@ -1,11 +1,8 @@
 @import '../../styles/abstract/mixins.scss';
 @import '../../styles/abstract/variables.scss';
 
-.description {
-    padding: 30px 0;
-}
-.faq {
-    padding: 30px 0;
+#education {
+    height: 100vh;
 }
 
 h2 {
@@ -34,4 +31,8 @@ h3 {
             transition: all ease .5s;
         }
     }
+}
+
+p {
+    color: $white;
 }
