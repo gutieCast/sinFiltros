@@ -17,8 +17,8 @@ export const MenuList = () => {
         <ul id='menu-primary'>
             {
                 items.map(({ link, name }) =>
-                    <MenuItem key={name}>
-                        <MenuLink link={link} linkName={name} />
+                    <MenuItem key={name} keyId={name + "1"}>
+                        <MenuLink styleName="uk-animation-slide-left-small menu-link" link={link} linkName={name} />
                     </MenuItem>
                 )
             }

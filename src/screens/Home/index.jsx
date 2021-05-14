@@ -1,7 +1,8 @@
 import React from 'react'
 import imgHome from '../../assets/img/hero-index.png';
 import { Layout } from '../../components/Layout'
-import { GridCards } from './components'
+import { arrayCards } from './infoCards.js'
+import { GridCards } from '../../components/GridCards'
 
 
 const Home = () => {
@@ -16,8 +17,8 @@ const Home = () => {
     }
     return (
         <>
-            <Layout img={img} text={textHome.text} showHero={true}>
-                <GridCards />
+            <Layout showHero={true} img={img} text={textHome.text} >
+                <GridCards array={arrayCards} />
             </Layout>
         </>
     )

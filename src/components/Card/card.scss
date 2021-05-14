@@ -5,9 +5,10 @@
 .card-box {
     // min-height: 430px;
     // min-width: 130px;
+    box-sizing: content-box;
     display: block;
     position: relative;
-    width: max-content;
+    width: inherit;
     @include breakpoint-2 {
         padding-left: 25px;
         padding-bottom: 30px;
@@ -22,7 +23,10 @@
     // }
     @include breakpoint-6 {
         padding: 10px;
-        width: inherit;
+        // width: 217px;
+    }
+    @include breakpoint-7 {
+        padding: 23px;
     }
     .card {
         background-blend-mode: screen;
@@ -42,7 +46,7 @@
         }
         @include breakpoint-6 {
             filter: none;
-            width: 303px;
+            width: 311px;
             &:hover {
                 z-index: 999;
                 filter: contrast(40%);

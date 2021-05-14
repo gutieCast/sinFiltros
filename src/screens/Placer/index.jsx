@@ -1,18 +1,15 @@
 import React from 'react'
-import imgPlacer from '../../assets/img/personajes/3_02.png'
 import { Layout } from '../../components/Layout'
+import { GridCards } from '../../components/GridCards'
+import './placer.scss'
 
 const Placer = () => {
-    const img = {
-        url: imgPlacer,
-        alt: "Character Placer",
-        id: 'img-placer'
-    }
     return (
-        <Layout img={img}>
+        <Layout namePage='placer'>
             <h2>
                 Placer
             </h2>
+            <GridCards />
         </Layout>
     )
 }

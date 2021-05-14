@@ -1,11 +1,6 @@
-import imgPlacer from '../../../../assets/img/cards/placer.png'
-import imgRelaciones from '../../../../assets/img/cards/relaciones.png'
-import imgCuerpos from '../../../../assets/img/cards/cuerpos.png'
-import imgGenero from '../../../../assets/img/cards/genero.png'
-import imgSexoSexualidad from '../../../../assets/img/cards/sexo-sexualidad.png'
-import imgDerechos from '../../../../assets/img/cards/derechos-sexuales-reproductivos.png'
+import post1-1 from '../../assets/img/posts'
 
-const infoCards = [
+const infoPost = [
     {
         title: "Placer",
         src: imgPlacer,
@@ -51,4 +46,4 @@ const infoCards = [
     }
 ]
 
-export const arrayCards = infoCards
+export const arrayImg = infoPost

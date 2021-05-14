@@ -9,7 +9,10 @@ export const Layout = ({ children, img, text, namePage, showHero }) => {
         <>
             <Header />
             <Main namePage={namePage}>
-                <Hero img={img} text={text} showHero={showHero} />
+                {
+                    showHero &&
+                    <Hero img={img} text={text} showHero={showHero} />
+                }
                 {children}
             </ Main>
             < Footer />

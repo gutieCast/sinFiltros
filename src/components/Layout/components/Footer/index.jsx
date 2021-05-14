@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { MenuFooter } from './components/MenuFooter'
+import { MenuLink } from '../Header/components/Nav/components'
+// import { MenuFooter } from './components/MenuFooter'
 import './footer.scss'
 
 const items = [
@@ -39,7 +39,8 @@ export const Footer = () => {
                     {
                         items.map(({ link, name }) =>
                             <li key={name} className="uk-animation-toggle item-footer" tabIndex="0">
-                                <a href={link} className="uk-animation-scale-up link-footer" linkName={name} />
+                                <MenuLink to={link} styleName="uk-animation-scale-up link-footer"
+                                    linkName={name} />
                             </li>
                         )
                     }

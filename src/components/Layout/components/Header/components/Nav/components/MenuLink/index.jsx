@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './menuLink.scss';
 
-const MenuLink = ({ link, linkName }) => {
+const MenuLink = ({ link, linkName, styleName }) => {
     return (
-        <Link className="uk-animation-slide-left-small menu-link" to={link}>
+        <Link className={styleName} to={link}>
             {linkName}
         </Link>
     )
