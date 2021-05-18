@@ -7,6 +7,8 @@
     align-items: center;
     background-color: $dark-violet;
     bottom: 0;
+    left: 0;
+    right: 0;
     box-sizing: content-box;
     color: $white;
     display: flex;
@@ -26,7 +28,6 @@
         display: flex;
         height: 70px;
         justify-content: center;
-        margin: 30px;
         @include breakpoint-1 {
             padding : 10px;
         }
@@ -34,12 +35,14 @@
             padding: 10px 30px;
         }
         @include breakpoint-5 {
+            margin: 30px;
             padding: 10px 120px;
         }
         .icons-footer {
             align-items: center;
             display: flex;
-            flex-direction: row;
+            // flex-direction: row;
+            flex-basis: initial;
             justify-content: space-around;
             margin: 0;
             .item-social-network {
@@ -104,9 +107,8 @@
                 .link-footer {
                     color: $white;        
                     font-family: $title-font;
-                    font-size: $font-size-s;
                     @include breakpoint-1 {
-                        font-size: $font-size-xs;
+                        font-size: $font-size-xxs;
                     }
                     @include breakpoint-3 {
                         font-size: $font-size-s;

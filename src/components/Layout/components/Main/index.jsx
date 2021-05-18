@@ -4,14 +4,12 @@ import './main.scss'
 
 const Main = ({ children, namePage, showHero }) => {
     return (
-        <>
-            <main className='main' id={namePage} >
-                {showHero &&
-                    <Hero />
-                }
-                {children}
-            </main>
-        </>
+        <main className='main' id={namePage} >
+            {showHero &&
+                <Hero />
+            }
+            {children}
+        </main>
     );
 };
 

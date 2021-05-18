@@ -6,48 +6,25 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 85px;
-    // margin-top: 85px;
-    // margin-bottom: 85px;
-    width: 100vw;
-    // height: 100hv;
-    @include breakpoint-1 {
-        min-width: 240px;
-    }
-    @include breakpoint-2 {
-        min-width: 481px;
-    }
-    @include breakpoint-3 {
-        min-width: 768px;
-    }
-    @include breakpoint-4 {
-        min-width: 990px;
-    }
-    @include breakpoint-5 {
-        min-width: 1024px;
-    }
-    @include breakpoint-6 {
-        min-width: 1366px;
-    }
-    @include breakpoint-7 {
-        min-width: 1824px;
-    }
-     
+    padding-top: 5px;
+    width: 100%;
     .text-content {
-        align-items: start;
         display: block;
         text-align: center;
-        // margin: 95px 0 20px 0;
-        @include breakpoint-1 {
-            height: 100vh;
-        }
+        margin: 0;
+        padding: 80px 0;
+        height: 585px;
         // @include breakpoint-3 {
-        //     height: 50vh;
+        //     height: 585px;
         // }
-        @include breakpoint-7 {
-            height: 50vh;
+        @include breakpoint-6 {
+            height: 719px;
         }
-        #text-hero { 
+        // @include breakpoint-7 {
+        //     height: 100vh;
+        // }
+        #text-hero {
+            padding-top: 150px;
             margin: auto; 
             text-align: center;
             color: $white;
@@ -70,36 +47,39 @@
                 font-size: 5rem;
             }
             @include breakpoint-7 {
-                font-size: 5rem;
+                // padding-top: 507px;
+                font-size: 7rem;
             }
         }
-}
+    }
     .img-container-hero {
         display: block;
         width: 100vw;
-        position: relative;
-        @include breakpoint-3 {
-            height: 50vh;
+        @include breakpoint-7 {
+            height: 1000px;
         }
         #img-hero{
-            position: relative;
-            bottom: 85px;
             background-repeat: no-repeat;
             margin: auto;
             background-attachment: fixed;
-            // padding: 85px 0;
             max-width: 100%;
-            max-height: max-content;
-            background-position: 30% 50%;
             @include breakpoint-1 {
                 background-size: contain;
             }
             @include breakpoint-7 {
-                background-attachment: scroll;
-                background-size: cover;
-                height: max-content;
+                background-attachment: unset;
+                height: 100%;
+                width: 100%;
             }
         }
+        // #img-hero-big {
+        //     background-repeat: no-repeat;
+        //     // background-attachment: fixed;
+        //     margin: auto;
+        //     background-size:contain;
+        //     height: 100%;
+        //     width: 100%;
+        // }
     }
 }
 

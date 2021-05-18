@@ -14,6 +14,7 @@
         padding: 100px 50px;
     }
     @include breakpoint-3 {
+        margin: 0;
         align-items: center;
         background-color: none;
         display: flex;
