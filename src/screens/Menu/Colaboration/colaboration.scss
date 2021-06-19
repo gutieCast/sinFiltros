@@ -1,5 +1,5 @@
-@import '../../styles/abstract/mixins.scss';
-@import '../../styles/abstract/variables.scss';
+@import '../../../styles/abstract/mixins.scss';
+@import '../../../styles/abstract/variables.scss';
 
 h2 {
     font-family: $title-font;
@@ -26,6 +26,17 @@ p {
     //         transition: all ease .5s;
     //     }
     // }
+}
+
+.button {
+    font-family: $normal-font;
+    font-weight: bold;
+    background-color: $green;
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px $dark-violet;
+    &:hover {
+        background-color: $orange;
+    }
 }
 
 .formColaboration {
@@ -81,6 +92,7 @@ p {
         font-family: $normal-font;
         color: $white;
     }
+    
 }
 
 

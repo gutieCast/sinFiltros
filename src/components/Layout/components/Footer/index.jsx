@@ -4,11 +4,11 @@ import { MenuLink } from '../Header/components/Nav/components'
 import './footer.scss'
 
 const items = [
-    { name: 'Contacto', link: '/contacto' },
-    { name: 'Privacidad', link: '/privacidad' },
-    { name: 'Media Kit', link: '/media-kit' },
-    { name: 'Donaciones', link: '/donaciones' },
-    { name: 'Social Partners', link: '/social-partners' }
+    { name: 'Contacto', link: '/options/contacto' },
+    { name: 'Privacidad', link: '/options/privacidad' },
+    { name: 'Media Kit', link: '/options/media-kit' },
+    { name: 'Donaciones', link: '/options/donaciones' },
+    { name: 'Social Partners', link: '/options/social-partners' }
 ]
 
 export const Footer = () => {
@@ -39,8 +39,7 @@ export const Footer = () => {
                     {
                         items.map(({ link, name }) =>
                             <li key={name} className="uk-animation-toggle item-footer" tabIndex="0">
-                                <MenuLink to={link} styleName="uk-animation-scale-up link-footer"
-                                    linkName={name} />
+                                <MenuLink styleName="uk-animation-scale-up link-footer" link={link} linkName={name} />
                             </li>
                         )
                     }

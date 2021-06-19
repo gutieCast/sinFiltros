@@ -1,17 +1,10 @@
 import React from 'react'
-import imgEspada from '../../assets/img/iconosYPatrones/Patrones/Espada.png'
-import { Layout } from '../../components/Layout'
+import { Layout } from '../../../components/Layout'
 import './aboutUs.scss'
 
 const AboutUs = () => {
-    const img = {
-        url: imgEspada,
-        alt: "Sword pattern",
-        id: 'img-about-us   '
-    }
-
     return (
-        <Layout img={img} namePage="about-us">
+        <Layout namePage="about-us">
             <section className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical description" >
                 <h2>
                     Acerca de
@@ -41,7 +34,7 @@ const AboutUs = () => {
                         ¿Cómo se crean los recursos de la plataforma?
                     </h3>
                     <div className="parraph">
-                        Sinfiltros cuenta con un equipo que consta de: psicopedagogas, redactoras, diseñadoras, ilustradoras y progamadoras.
+                        Sinfiltros cuenta con un equipo que consta de: psicopedagogxs, redactorxs, diseñadorxs, ilustradorxs y programadorxs.
                     </div>
                     <div className="parraph">
                         Los contenidos son creados con base en un consolidado elaborado por especialistas en educación sexual para adolescentes.

@@ -11,12 +11,6 @@ const Hero = ({ img, text }) => {
                 </h2>
             </div>
             <div className="img-container-hero">
-                {/* {
-                    window.innerHeight > 1823
-                        ? <div id="img-hero-big" style={{ backgroundImage: `url(${img.url})` }}></div>
-                        : <div className="uk-background-fixed uk-background-center-center uk-height-large uk-width-1-1" id="img-hero" style={{ backgroundImage: `url(${img.url})` }}>
-                        </div >
-                } */}
                 <div className="uk-background-fixed uk-background-center-center uk-height-large uk-width-1-1" id="img-hero" style={{ backgroundImage: `url(${img.url})` }}>
                 </div >
             </div>

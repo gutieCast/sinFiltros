@@ -11,7 +11,6 @@ const Home = () => {
         alt: " Illustration. Six teenager friends are together. They looked happy.",
         id: 'img-hero'
     }
-
     const textHome = {
         text: ['Educación sexual integral', <br />, 'sin culpas ', <br />, 'ni vergüenzas']
     }

@@ -4,11 +4,11 @@ import { MenuItem } from '../MenuItem'
 import { MenuLink } from '../MenuLink'
 
 const items = [
-    { name: 'Acerca de', link: '/acerca-de' },
-    { name: 'Educadores', link: '/educadores' },
-    { name: 'Padres', link: '/padres' },
-    { name: 'Multimedia', link: '/multimedia' },
-    { name: 'Colabora', link: '/colabora' }
+    { name: 'Acerca de', link: '/menu/acerca-de' },
+    { name: 'Educadores', link: '/menu/educadores' },
+    { name: 'Padres', link: '/menu/padres' },
+    { name: 'Multimedia', link: '/menu/multimedia' },
+    { name: 'Colabora', link: '/menu/colabora' }
 ]
 
 

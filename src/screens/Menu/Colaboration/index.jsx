@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout } from '../../components/Layout'
+import { Layout } from '../../../components/Layout'
 import './colaboration.scss'
 
 const Colaboration = () => {
@@ -8,7 +8,6 @@ const Colaboration = () => {
     }
     return (
         <Layout namePage="colaboration">
-
             <h2>
                 Colabora
             </h2>
@@ -16,12 +15,12 @@ const Colaboration = () => {
                 Sinfiltros.org es una multiplataforma de educación sexual que está en constante crecimiento, si quieres colaborar, llena el siguiente formulario:
             </p>
             <form className="uk-form formColaboration">
-                <fieldset class="uk-fieldset">
+                <fieldset className="uk-fieldset">
                     <div className="uk-margin">
-                        <input class="uk-input" type="text" placeholder="Nombre" />
+                        <input className="uk-input" type="text" placeholder="Nombre" />
                     </div>
                     <div className="uk-margin">
-                        <input class="uk-input" type="email" placeholder="E-mail" />
+                        <input className="uk-input" type="email" placeholder="E-mail" />
                     </div>
 
                     <div className="uk-margin uk-grid-small uk-child-width-auto uk-grid checkbox-container">
@@ -73,7 +72,7 @@ const Colaboration = () => {
                         </label>
                     </div>
                     <span>
-                        <button onClick={(e) => handleSubmit(e)} className="uk-button uk-button-primary" type="button">Enviar</button>
+                        <button onClick={(e) => handleSubmit(e)} className="uk-button uk-button-primary button" type="button">Enviar</button>
                     </span>
                 </fieldset>
             </form>
