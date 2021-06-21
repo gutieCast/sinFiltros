@@ -1,37 +1,6 @@
 @import '../../../styles/abstract/mixins.scss';
 @import '../../../styles/abstract/variables.scss';
 
-.description {
-    padding: 30px 0;
-}
-.faq {
-    padding: 30px 0;
-}
-
-h2 {
-    font-family: $title-font;
-}
-
-h3 {
-    padding: 0 50px;
-    text-align: left;
-    font-family: $normal-font;
-    font-weight: bolder;
-    color: $white;
-}
-
-.parraph {
-    margin: 20px 0;
-    padding: 0 50px;
-    font-family: $normal-font;
-    color: $white;
-    text-align: justify;
-    a {
-        color: $white;
-        &:hover {
-            text-decoration: none;
-            color: $yellow;
-            transition: all ease .5s;
-        }
-    }
+.question-container {
+    padding-bottom: 30px;
 }

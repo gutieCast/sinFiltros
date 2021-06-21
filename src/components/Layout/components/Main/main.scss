@@ -10,11 +10,86 @@
     justify-content: center;
     opacity: 1;
     width: 100vw;
-    padding-top: 100px;
-    padding-bottom: 190px;
+    padding: 150px 50px 190px 50px;
+    // padding-bottom: 190px;
     .nav-open & {
         opacity: 0;
         overflow: hidden;
         transition: all 0.3s;
     }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        @include breakpoint-3 {
+            padding: 0 70px 30px 70px;
+        }
+        @include breakpoint-4 {
+            padding: 0 110px 30px 110px;
+        }
+    }
+    
+    h2 {
+        color: $white;
+        font-family: $title-font;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: justify;
+        font-family: $normal-font;
+        // font-weight: 700;
+        color: $white;
+    }
+
+    h4 {
+        text-align: justify;
+        font-family: $normal-font;
+        color: $white;
+    }
+
+    p, .text {
+        color: $white;
+        font-family: $normal-font;
+        font-size: $font-size-normal;
+        font-weight: 500;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        // padding: 0 30px;
+        // // text-align: justify;
+        // @include breakpoint-3 {
+        //     padding: 0 70px;
+        // }
+        // @include breakpoint-6 {
+        //     padding: 110px;
+        // }
+        a {
+            color: inherit;
+            &:hover {
+                text-decoration: none;
+                color: $dark-violet;
+                transition: all ease .5s;
+            }
+        }
+    }
+    .button-container {
+        padding-top: 50px;
+        .button {
+            background-color: $dark-blue;
+            border-color: transparent;
+            border-radius: 5px;
+            box-shadow: -3px 3px 3px $dark-violet;
+            display: block;
+            font-family: $title-font;
+            font-weight: bolder;
+            color: $white;
+            margin: auto;
+            &:hover {
+                background-color: $yellow;
+                color: $dark-violet;
+                transition: all ease-out .7s;
+            }
+        }
+    }  
 }

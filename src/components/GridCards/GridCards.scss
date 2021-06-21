@@ -3,15 +3,16 @@
 
 .grid-container {
     // margin: 50px;
-    // padding: 50px;
+    padding-top: 80px;
+    height: max-content;
     width: 100vw;
     .gridCards {
         display: flex;
         justify-content: center;
-        // height: inherit;
+        align-content: center;
+        background-position: 50% 50%;
         @include breakpoint-6 {
-            padding: 100px 0 0 0;
-            // padding: 0;
+            padding: 110px 0 0 0;
             display: grid;
             grid-template-columns: 16% 16% 16% 16% 16% 16%;
         }

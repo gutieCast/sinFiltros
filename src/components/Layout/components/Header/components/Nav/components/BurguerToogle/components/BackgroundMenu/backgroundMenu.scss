@@ -22,17 +22,17 @@
         background-size: 100% 200%;
         background-position: -100% 100%;
         .nav-open & {
-        transform: rotate(-45deg) translateY(-49%);
-        background-position: 0 0;
-        overflow: hidden;
+            transform: rotate(-45deg) translateY(-49%);
+            background-position: 0 0;
+            overflow: hidden;
         }
     }
     &.middle {
         transform: rotate(-45deg) translateY(50%) scaleY(0);
         background: $dark-blue;
         .nav-open & {
-        transform: rotate(-45deg) translateY(50%) scaleY(1);
-        overflow: hidden;
+            transform: rotate(-45deg) translateY(50%) scaleY(1);
+            overflow: hidden;
         }
     }
     &.bottom {
@@ -41,9 +41,9 @@
         background-size: 100% 200%;
         background-position: 0 -100%;
         .nav-open & {
-        transform: rotate(-45deg) translateY(149%);
-        background-position: 0 0;
-        overflow: hidden;
+            transform: rotate(-45deg) translateY(149%);
+            background-position: 0 0;
+            overflow: hidden;
         }
     }   
 }

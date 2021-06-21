@@ -24,6 +24,10 @@
             text-decoration-line: none;
             transition: color ease-out .7s;
         }
+        &:active {
+            color: $yellow;
+            font-style: italic;
+        }
     }
     @include breakpoint-4 {
         cursor: pointer;

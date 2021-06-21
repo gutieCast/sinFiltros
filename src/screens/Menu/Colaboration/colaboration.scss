@@ -1,46 +1,7 @@
 @import '../../../styles/abstract/mixins.scss';
 @import '../../../styles/abstract/variables.scss';
 
-h2 {
-    font-family: $title-font;
-}
-
-p {
-    margin: 0 50px 30px 50px;
-    padding: 0;
-    font-family: $normal-font;
-    color: $white;
-    text-align: justify;
-    font-size: 1rem;
-    @include breakpoint-3 {
-        font-size: 1.7rem;
-    }
-    @include breakpoint-6 {
-        font-size: 2rem;
-    }
-    // a {
-    //     color: $dark-violet;
-    //     &:hover {
-    //         text-decoration: none;
-    //         color: $yellow;
-    //         transition: all ease .5s;
-    //     }
-    // }
-}
-
-.button {
-    font-family: $normal-font;
-    font-weight: bold;
-    background-color: $green;
-    border-radius: 5px;
-    box-shadow: -5px 5px 5px $dark-violet;
-    &:hover {
-        background-color: $orange;
-    }
-}
-
 .formColaboration {
-    width: 70vw;
     display: block;
     .checkbox-container {
         display: flex;
@@ -86,13 +47,7 @@ p {
                 left: 6px;
             }
         }
-    }
-    .text {
-        font-size: 1rem;
-        font-family: $normal-font;
-        color: $white;
-    }
-    
+    }  
 }
 
 
