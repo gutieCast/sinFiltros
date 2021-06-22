@@ -16,7 +16,7 @@ const Education = () => {
                     <Card
                         title={"PDF descargable"}
                         src={imgRoute}
-                        alt={"sinfiltros.org handbook"}
+                        alt={"handbook by sinfiltros.org"}
                         id={"imgHandbook"}
                     />
                 </Link>

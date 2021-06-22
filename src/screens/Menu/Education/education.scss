@@ -2,26 +2,20 @@
 @import '../../../styles/abstract/variables.scss';
 
 #education {
-    height: 130vh;
-}
-
-.img-handbook-container {
-    display: block;
-    width: 20vw;
-    height: 25%;
-    @include breakpoint-7 {
-        height: 693px;
+    flex: 1;
+    .card {
+        @include breakpoint-3 {
+            opacity: 1;
+            width: unset;
+        }
+        .img-handbook-container {
+            display: block;
+            width: 200px;
+            height: 25%;
+            #imgHandbook {
+                margin: auto;
+                max-width: 100%;
+            }
+        }
     }
-    // @include breakpoint-7 {
-    //     height: 1000px;
-    // }
-    .card-box {
-        padding: 30px 0;
-        margin: auto;
-    }
-    #imgHandbook {
-        margin: auto;
-        max-width: 100%;
-    }
-
 }
